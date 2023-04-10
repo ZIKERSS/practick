@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <!--шрифт inter-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+
+    <title>LATTE CAFE</title>
+</head>
+
+<body> 
+<div class="frame1">
+   
+    <script>
+    function FoodMenu(){
+        document.getElementById('menu')
+        .innerHTML="Menu"
+        document.getElementById('myImage')
+        .src="img/photo1.jpeg";
+        document.getElementById('message')
+        .innerHTML="We change our menu every season. Here is what we are currently dishing up.";
+    }
+          
+    function DrinksMenu(){
+        document.getElementById('menu')
+        .innerHTML="Menu"
+        document.getElementById('myImage')
+        .src="img/photo2.jpeg";
+        document.getElementById('message')
+        .innerHTML="We change our menu every season. Here is what we are currently dishing up.";
+    }
+    
+    function TakeawayMenu(){
+        document.getElementById('menu')
+        .innerHTML="Menu"
+        document.getElementById('myImage')
+        .src="img/photo3.jpeg";
+        document.getElementById('message')
+        .innerHTML="We change our menu every season. Here is what we are currently dishing up.";
+    }
+</script>
+   
+    <div class="frame2">
+        <b class="menu" id="menu">Menu</b>
+           
+            <a class="description" id="message">We change our menu every season.
+        Here is what we are currently dishing up.</a>
+               
+                <button class="button" type ="button" onclick=FoodMenu();>Food Menu</button>
+                <button class="button" type ="button" onclick=DrinksMenu();>Drinks Menu</button>
+                <button class="button" type ="button" onclick=TakeawayMenu();> Takeaway Menu</button>
+                
+    </div>
+       
+        <img class="picture" id="myImage" src="img/photo1.jpeg">
+</div>
+</body> 
